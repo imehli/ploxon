@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+
+.ploxonHomeWrap {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.languageSwitcherWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .ploxonHomeWrap {
+    border-top-width: 20px;
+    min-height: 100vh;
+  }
+}
