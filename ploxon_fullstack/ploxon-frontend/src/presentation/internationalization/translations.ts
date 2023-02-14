@@ -2,12 +2,16 @@ export const translations =
 {
   en: {
     translations: {
+      navigation: {
+        signin: 'Sign in',
+        signup: 'Sign up'
+      },
       greeting: {
         hello: 'WELCOME TO PLOXON'
       },
       ploxon_description: {
         description: {
-          div1: 'Ploxon is a platform designed with clean architecture principles ensuring modular scalable and maintainable design. The platform is deployed in the cloud using AWS 3 tier VPC architecture providing a secure and robust infrastructure.',
+          div1: 'Ploxon is a platform for self-managed elections and project management that operates using a decentralized autonomous organization (DAO) model, it is designed with clean architecture principles ensuring modular scalable and maintainable design. The platform is deployed in the cloud using AWS 3 tier VPC architecture providing a secure and robust infrastructure.',
           div2: 'Developers using Ploxon need a good understanding of some concepts like: TDD, clean architecture and AWS 3 tier VPC architecture. With these skills they can take full advantage of the platform\'s features and build software that meets the highest standards of quality and performance.',
           div3: 'Whether you\'re a developer or an end user Ploxon offers a seamless experience that is optimized for security performance and scalability So if you\'re looking for a platform that will help you take your software projects to the next level Ploxon is the answer.'
         },
@@ -31,12 +35,16 @@ export const translations =
   },
   fr: {
     translations: {
+      navigation: {
+        signin: 'Se connecter',
+        signup: 'S\'enregistrer'
+      },
       greeting: {
         hello: 'BIENVENUE DANS PLOXON'
       },
       ploxon_description: {
         description: {
-          div1: 'Ploxon est une plateforme conçue avec des principes de la Clean architecture garantissant une conception modulaire scalable et maintenable. La plateforme est deployée dans le cloud sous le model de la 3 tier VPC architecture d\'AWS fournissant une infrastructure securisée et robuste.',
+          div1: 'Ploxon est une plateforme d\'eléction et de gestion de projets autogérée grace à un model DAO (Organisation Autonome décentralisée), elle est conçue avec des principes de la Clean architecture garantissant une conception modulaire scalable et maintenable. La plateforme est deployée dans le cloud sous le model de la 3 tier VPC architecture d\'AWS fournissant une infrastructure securisée et robuste.',
           div2: 'Les développeurs utilisant Ploxon sont invités à avoir une certaine familiarité avec quelque concepts tel que le TDD, la Clean architecture et la 3 tier VPC architecture d\'AWS, avec ces compétences ils peuvent pleinement tirer parti des fonctionnalités de la plateforme et construire un systeèe qui répond aux plus hauts standards de qualité et de performance.',
           div3: 'Que vous soyez un développeur ou un utilisateur final Ploxon offre une expérience fluide qui est optimisée pour la sécurité, les performances et la scalabilité, alors si vous cherchez une plateforme qui vous aidera à faire passer vos projets à un autre niveau, Ploxon est là pour vous !'
         },

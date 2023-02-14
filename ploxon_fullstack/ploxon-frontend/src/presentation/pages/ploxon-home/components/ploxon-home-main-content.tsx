@@ -14,10 +14,10 @@ const PloxonHomeMainContent: React.FC = () => {
         <section data-testid="ploxon-home" className={Styles.firstSection}>
             <div className={Styles.firstSectionContent}>
                 <h1>PLOXON</h1>
-                <p className={Styles.slogan}>The Art and Science of Design !</p>
+                <p className={Styles.slogan}>The Art and Science of Management !</p>
                 <div className={Styles.firstSectionMenu}>
-                    <div className={Styles.menuOptions}><Link data-testid="login-link" to="/login"><p>Sign in</p></Link></div>
-                    <div className={Styles.menuOptions}><Link data-testid="signup-link" to="/signup"><p>Sign up</p></Link></div>
+                    <div className={Styles.menuOptions}><Link data-testid="login-link" to="/login"><p>{t('navigation.signin')}</p></Link></div>
+                    <div className={Styles.menuOptions}><Link data-testid="signup-link" to="/signup"><p>{t('navigation.signup')}</p></Link></div>
                     <div className={Styles.menuOptions}><a href="#secondSection"><p>Informations</p></a></div>
                     <div className={Styles.menuOptions}><a href={LINK_PLOXON_GITHUP_REPOSITORY} target="_blank" rel="noreferrer"><p>Github</p></a></div>
                 </div>
