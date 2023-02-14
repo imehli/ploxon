@@ -1,5 +1,5 @@
 export default {
-  mongoUrl: process.env.MONGO_URL || 'mongodb+srv://testDBUser:password4testDBUser@cluster0.nnclx1o.mongodb.net/?retryWrites=true&w=majority',
+  mongoUrl: process.env.MONGO_URL || 'http://localhost:5656',
   port: process.env.PORT || 5050,
-  jwtSecret: process.env.JWT_SECRET || 'tj67O==5H'
+  jwtSecret: process.env.JWT_SECRET || 'secret'
 }
