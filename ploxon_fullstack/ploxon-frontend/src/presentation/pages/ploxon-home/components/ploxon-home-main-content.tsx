@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 const PloxonHomeMainContent: React.FC = () => {
   const { t } = useTranslation()
   const LINK_PLOXON_GITHUP_REPOSITORY = 'https://github.com/imehli/ploxon'
+  const LINK_PLOXON_GRAPHQL_API = 'https://www.ploxon.com:5050/graphql'
 
   return (
     <div>
@@ -20,12 +21,13 @@ const PloxonHomeMainContent: React.FC = () => {
                     <div className={Styles.menuOptions}><Link data-testid="signup-link" to="/signup"><p>{t('navigation.signup')}</p></Link></div>
                     <div className={Styles.menuOptions}><a href="#secondSection"><p>Informations</p></a></div>
                     <div className={Styles.menuOptions}><a href={LINK_PLOXON_GITHUP_REPOSITORY} target="_blank" rel="noreferrer"><p>Github</p></a></div>
+                    <div className={Styles.menuOptions}><a href={LINK_PLOXON_GRAPHQL_API} target="_blank" rel="noreferrer"><p>{t('navigation.graphql')}</p></a></div>
                 </div>
             </div>
         </section>
         <section id="secondSection" data-testid="ploxon-home2" className={Styles.secondSection}>
             <h1>
-                {t('greeting.hello')}
+                {t('ploxon_description.description.title')}
             </h1>
             <article>
                 <div>

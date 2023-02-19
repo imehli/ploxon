@@ -10,7 +10,7 @@ const LoginHeader: React.FC = () => {
       <Link data-testid="ploxonHome-link" replace to="/">
         <Logo />
       </Link>
-      <h1>The Art and Science of Design !</h1>
+      <h1>The Art and Science of Management !</h1>
     </header>
   )
 }
