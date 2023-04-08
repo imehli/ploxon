@@ -60,7 +60,7 @@ const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
         <Input type="email" name="email" placeholder="Type your email" />
         <Input type="password" name="password" placeholder="Type your password" />
         <SubmitButton text="Submit" />
-        <Link data-testid="signup-link" to="/signup" className={Styles.link}>Creat an account</Link>
+        <Link data-testid="signup-link" to="/signup" className={Styles.link}>Create an account</Link>
         <FormStatus />
       </form>
       <Footer />

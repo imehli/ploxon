@@ -14,6 +14,9 @@ module.exports = merge(common, {
       loader: 'ts-loader',
       exclude: /node_modules/
     }, {
+      test: /\.(png|jpe?g|gif)$/i,
+      loader: 'file-loader'
+    }, {
       test: /\.scss$/,
       use: [{
         loader: 'style-loader'

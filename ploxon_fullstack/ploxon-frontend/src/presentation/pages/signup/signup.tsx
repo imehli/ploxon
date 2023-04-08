@@ -60,7 +60,7 @@ const SignUp: React.FC<Props> = ({ validation, addAccount }: Props) => {
     <div className={Styles.signupWrap}>
       <LoginHeader />
       <form data-testid="form" className={Styles.form} onSubmit={handleSubmit}>
-        <h2>Creat an account</h2>
+        <h2>Create an account</h2>
         <Input type="text" name="name" placeholder="Type your name" />
         <Input type="email" name="email" placeholder="Type your e-mail" />
         <Input type="password" name="password" placeholder="Type your password" />
