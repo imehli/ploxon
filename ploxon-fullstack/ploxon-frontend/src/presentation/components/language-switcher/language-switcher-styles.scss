@@ -1,0 +1,53 @@
+@import "../../styles/colors.scss";
+
+.languageSwitcherWrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navMenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $primaryLight;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+}
+
+.toggle{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closeButton{
+  display: flex;
+  justify-content: end;
+  background-color: $primaryLight;
+}
+
+.buttonsWrap{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .buttonsContent{
+    display: flex;
+    flex-direction: column;
+    
+    .divLang{
+      width: 90px;
+      width: 100%;
+  
+      .langText{
+        width: 90px;
+      }
+    }
+  }
+}

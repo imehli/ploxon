@@ -1,0 +1,22 @@
+@import "@/presentation/styles/colors.scss";
+
+.userInformationsWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .userInformationsSection {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    height: 100%;
+
+    h1 {
+      color: $primaryDark;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+  }
+}

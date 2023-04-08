@@ -1,0 +1,180 @@
+@import "../../../styles/colors.scss";
+
+.firstSection{
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding: 40px;
+  align-self: center;
+  margin-bottom: 40px;
+
+  .firstSectionContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 50px;
+      align-self: center;
+    }
+
+    .slogan {
+      font-size: 18px;
+      align-self: center;
+      margin-top: 16px;
+    }
+
+    .firstSectionMenu {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin-top: 60px;
+      
+      .menuOptions {
+        display: flex;
+        justify-content: center;
+        background-color: $primary;
+        line-height: 50px;
+        color: $white;
+        border-radius: 8px;
+        font-size: 16px;
+        border: none;
+        padding: 0px 16px;
+        outline: none;
+        margin-top: 16px;
+      
+        &:hover {
+          opacity: 0.9;
+        }
+        
+        &:disabled {
+          background-color: $disabledBackground;
+          color: $disabledColor;
+      
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        p {
+          color: white;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.secondSection {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: $white;
+  align-self: center;
+  padding: 0px 100px;
+
+  h1 {
+    color: $primaryDark;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 30px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    color: $primaryDark;
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  article {
+    
+    h2 {
+      color: $primaryDark;
+      text-align: left;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 10px;
+      color: $primaryDark;
+      text-align: justify;
+      font-size: 16px;
+
+      .smallImage {
+        align-self: center;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 20px;
+      }
+
+      .mediumImage {
+        align-self: center;
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        margin: 20px;
+      }
+
+      .largeImage {
+        align-self: center;
+        width: 100%;
+        max-width: 1500px;
+        height: auto;
+        margin: 20px;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 32px;
+    color: $primaryDark;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  button {
+    margin-top: 32px;
+  }
+
+  .link {
+    text-align: center;
+    color: $primary;
+    text-transform: lowercase;
+    margin-top: 16px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.languageSwitcherWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .ploxonHomeWrap {
+    border-top-width: 20px;
+  }
+
+  .secondSection {
+    padding: 20px;
+  }
+}

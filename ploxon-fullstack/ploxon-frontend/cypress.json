@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://localhost:80",
+  "fixturesFolder": "tests/e2e/cypress/fixtures",
+  "supportFile": "tests/e2e/cypress/support/index.js",
+  "pluginsFile": "tests/e2e/cypress/plugins/index.js",
+  "integrationFolder": "tests/e2e/cypress/integration",
+  "video": false,
+  "viewportWidth": 1000,
+  "viewportHeight": 1000
+}
