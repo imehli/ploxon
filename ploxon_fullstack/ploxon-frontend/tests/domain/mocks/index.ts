@@ -1,7 +1,0 @@
-export * from './mock-authentication'
-export * from './mock-add-account'
-export * from './mock-account-informations'
-export * from './mock-add-project'
-export * from './mock-project-list'
-export * from './mock-project-stats'
-export * from './mock-account'
