@@ -1,4 +1,4 @@
-import { makeLogin, makeSignUp, makeProjectList, makeProjectStats, makePloxonHome, makeAccountInformations, makeCreatProject } from '@/main/factories/pages'
+import { makeLogin, makeSignUp, makeProjectList, makeProjectStats, makePloxonHome, makeAccountInformations, makeCreateProject } from '@/main/factories/pages'
 import { setCurrentAccountAdapter, getCurrentAccountAdapter } from '@/main/adapters'
 import { PrivateRoute } from '@/main/proxies'
 import { currentAccountState } from '@/presentation/components'
@@ -21,7 +21,7 @@ const Router: React.FC = () => {
           <Route path="/signup" exact component={makeSignUp} />
           <PrivateRoute path="/projects" exact component={makeProjectList} />
           <PrivateRoute path="/account" exact component={makeAccountInformations} />
-          <PrivateRoute path="/creatproject" exact component={makeCreatProject} />
+          <PrivateRoute path="/creatproject" exact component={makeCreateProject} />
           <PrivateRoute path="/projects/:projectId" component={makeProjectStats} />
           <Route path="/" exact component={makePloxonHome} />
           <Route path="/*" exact component={makePloxonHome} />

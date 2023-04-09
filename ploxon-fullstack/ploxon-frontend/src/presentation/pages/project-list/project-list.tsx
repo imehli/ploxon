@@ -6,6 +6,7 @@ import { LoadProjectList } from '@/domain/usecases'
 
 import { useRecoilState, useResetRecoilState } from 'recoil'
 import React, { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   loadProjectList: LoadProjectList
@@ -18,6 +19,7 @@ const ProjectList: React.FC<Props> = ({ loadProjectList }: Props) => {
   })
   const [state, setState] = useRecoilState(projectListState)
   const reload = (): void => setState(old => ({ projects: [], error: '', reload: !old.reload }))
+  const { t } = useTranslation()
 
   useEffect(() => resetProjectListState(), [])
   useEffect(() => {
@@ -30,7 +32,7 @@ const ProjectList: React.FC<Props> = ({ loadProjectList }: Props) => {
     <div className={Styles.projectListWrap}>
       <Header />
       <div className={Styles.contentWrap}>
-        <h2>POJECTS</h2>
+        <h2>{t('projects.header')}</h2>
         {state.error
           ? <Error error={state.error} reload={reload} />
           : <ProjectListItem projects={state.projects} />

@@ -4,13 +4,13 @@ node_modules
 ploxon/node_modules
 ploxon/.vscode
 
-ploxon/ploxon-frontend/node_modules
-ploxon/ploxon-frontend/.vscode
-ploxon/ploxon-frontend/coverage
-ploxon/ploxon-frontend/cypress
+ploxon/ploxon-fullstack/ploxon-frontend/node_modules
+ploxon/ploxon-fullstack/ploxon-frontend/.vscode
+ploxon/ploxon-fullstack/ploxon-frontend/coverage
+ploxon/ploxon-fullstack/ploxon-frontend/cypress
 
-ploxon/ploxon-backend/node_modules
-ploxon/ploxon-backend/.vscode
-ploxon/ploxon-backend/dist
-ploxon/ploxon-backend/coverage
-ploxon/ploxon-backend/globalConfig.json
+ploxon/ploxon-fullstack/ploxon-backend/node_modules
+ploxon/ploxon-fullstack/ploxon-backend/.vscode
+ploxon/ploxon-fullstack/ploxon-backend/dist
+ploxon/ploxon-fullstack/ploxon-backend/coverage
+ploxon/ploxon-fullstack/ploxon-backend/globalConfig.json

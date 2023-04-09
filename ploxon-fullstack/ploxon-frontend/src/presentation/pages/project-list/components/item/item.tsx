@@ -3,12 +3,14 @@ import { LoadProjectList } from '@/domain/usecases'
 
 import { Link } from 'react-router-dom'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   project: LoadProjectList.Model
 }
 
 const ProjectItem: React.FC<Props> = ({ project }: Props) => {
+  const { t } = useTranslation()
   return (
     <li className={Styles.projectItemWrap}>
       <div className={Styles.projectContent}>
@@ -25,7 +27,7 @@ const ProjectItem: React.FC<Props> = ({ project }: Props) => {
           <p data-testid="projectPrivateStatus">{project.projectPrivateStatus}</p>
         </div>
       </div>
-      <footer><Link data-testid="link" to={`/projects/${project.projectId}`}>See more informations</Link></footer>
+      <footer><Link data-testid="link" to={`/projects/${project.projectId}`}>{t('signup.link1')}</Link></footer>
     </li>
   )
 }

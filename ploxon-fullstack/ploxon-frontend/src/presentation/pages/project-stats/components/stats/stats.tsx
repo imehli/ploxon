@@ -4,6 +4,7 @@ import { LoadProjectStats } from '@/domain/usecases'
 
 import { useHistory } from 'react-router-dom'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   projectStats: LoadProjectStats.Model
@@ -11,6 +12,7 @@ type Props = {
 
 const ProjectStatsData: React.FC<Props> = ({ projectStats }: Props) => {
   const { goBack } = useHistory()
+  const { t } = useTranslation()
   return (
     <div>
       <hgroup>
@@ -38,7 +40,7 @@ const ProjectStatsData: React.FC<Props> = ({ projectStats }: Props) => {
           </div>
         </div>
       </hgroup>
-      <button className={Styles.button} data-testid="back-button" onClick={goBack}>Go back</button>
+      <button className={Styles.button} data-testid="back-button" onClick={goBack}>{t('signup.link2')}</button>
     </div>
   )
 }

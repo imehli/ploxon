@@ -1,6 +1,6 @@
-import Styles from './creat-project-styles.scss'
-import { creatProjectState, Input, SubmitButton, FormStatus } from './components'
-import { Footer, LoginHeader} from '@/presentation/components'
+import Styles from './create-project-styles.scss'
+import { createProjectState, Input, SubmitButton, FormStatus } from './components'
+import { Footer, LoginHeader } from '@/presentation/components'
 import { Validation } from '@/presentation/protocols'
 import { AddProject } from '@/domain/usecases'
 
@@ -13,12 +13,12 @@ type Props = {
   addProject: AddProject
 }
 
-const CreatProject: React.FC<Props> = ({ validation, addProject }: Props) => {
-  const resetCreatProjectState = useResetRecoilState(creatProjectState)
+const CreateProject: React.FC<Props> = ({ validation, addProject }: Props) => {
+  const resetCreateProjectState = useResetRecoilState(createProjectState)
   const history = useHistory()
-  const [state, setState] = useRecoilState(creatProjectState)
+  const [state, setState] = useRecoilState(createProjectState)
 
-  useEffect(() => resetCreatProjectState(), [])
+  useEffect(() => resetCreateProjectState(), [])
   useEffect(() => validate('projectName'), [state.projectName])
   useEffect(() => validate('description'), [state.description])
   useEffect(() => validate('resources'), [state.resources])
@@ -55,7 +55,7 @@ const CreatProject: React.FC<Props> = ({ validation, addProject }: Props) => {
   }
 
   return (
-    <div className={Styles.creatProjectWrap}>
+    <div className={Styles.createProjectWrap}>
       <LoginHeader />
       <form data-testid="form" className={Styles.form} onSubmit={handleSubmit}>
         <h2>Creat a project</h2>
@@ -72,4 +72,4 @@ const CreatProject: React.FC<Props> = ({ validation, addProject }: Props) => {
   )
 }
 
-export default CreatProject
+export default CreateProject

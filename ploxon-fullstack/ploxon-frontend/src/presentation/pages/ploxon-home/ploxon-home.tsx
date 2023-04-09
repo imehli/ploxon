@@ -1,7 +1,5 @@
 import Styles from './ploxon-home-styles.scss'
-import { Footer, PloxonHomeHeader, LanguageSwitcher } from '@/presentation/components'
-import { menuState } from '@/presentation/components/language-switcher/atoms'
-import { useRecoilValue } from 'recoil'
+import { Footer, PloxonHomeHeader } from '@/presentation/components'
 
 import React from 'react'
 import { PloxonHomeMainContent } from './components'

@@ -1,7 +1,7 @@
 import { atom } from 'recoil'
 
-export const creatProjectState = atom({
-  key: 'creatProjectState',
+export const createProjectState = atom({
+  key: 'createProjectState',
   default: {
     isLoading: false,
     isFormInvalid: true,

@@ -6,6 +6,7 @@ import { AccountInformationsList, accountInformationsState } from '@/presentatio
 import React, { useEffect } from 'react'
 import { useRecoilState, useResetRecoilState } from 'recoil'
 import { useErrorHandler } from '@/presentation/hooks'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   loadAccountInformations: LoadAccountInformations
@@ -18,6 +19,7 @@ const AccountInformations: React.FC<Props> = ({ loadAccountInformations }: Props
     setState(old => ({ ...old, error: error.message }))
   })
   const reload = (): void => setState(old => ({ accountInformations: null, error: '', reload: !old.reload }))
+  const { t } = useTranslation()
 
   useEffect(() => resetAccountInformationsState(), [])
   useEffect(() => {
@@ -29,7 +31,7 @@ const AccountInformations: React.FC<Props> = ({ loadAccountInformations }: Props
     <div className={Styles.userInformationsWrap}>
       <Header />
       <div className={Styles.userInformationsSection}>
-        <h1>User informations</h1>
+        <h1>{t('accountInformation.header')}</h1>
           {state.error
             ? <Error error={state.error} reload={reload} />
             : <AccountInformationsList accountInformations={state.accountInformations} />

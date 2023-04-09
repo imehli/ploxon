@@ -1,4 +1,4 @@
-import { creatProjectState } from './atoms'
+import { createProjectState } from './atoms'
 import { InputBase } from '@/presentation/components'
 
 import { useRecoilState } from 'recoil'
@@ -11,7 +11,7 @@ type Props = {
 }
 
 const Input: React.FC<Props> = ({ type, name, placeholder }: Props) => {
-  const [state, setState] = useRecoilState(creatProjectState)
+  const [state, setState] = useRecoilState(createProjectState)
   return (
     <InputBase
       type={type}

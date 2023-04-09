@@ -7,6 +7,7 @@ import { AddAccount } from '@/domain/usecases'
 import { useHistory, Link } from 'react-router-dom'
 import { useRecoilState, useRecoilValue, useResetRecoilState } from 'recoil'
 import React, { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   validation: Validation
@@ -18,6 +19,7 @@ const SignUp: React.FC<Props> = ({ validation, addAccount }: Props) => {
   const { setCurrentAccount } = useRecoilValue(currentAccountState)
   const history = useHistory()
   const [state, setState] = useRecoilState(signUpState)
+  const { t } = useTranslation()
 
   useEffect(() => resetSignUpState(), [])
   useEffect(() => validate('name'), [state.name])
@@ -60,13 +62,13 @@ const SignUp: React.FC<Props> = ({ validation, addAccount }: Props) => {
     <div className={Styles.signupWrap}>
       <LoginHeader />
       <form data-testid="form" className={Styles.form} onSubmit={handleSubmit}>
-        <h2>Create an account</h2>
-        <Input type="text" name="name" placeholder="Type your name" />
-        <Input type="email" name="email" placeholder="Type your e-mail" />
-        <Input type="password" name="password" placeholder="Type your password" />
-        <Input type="password" name="passwordConfirmation" placeholder="Retype your password" />
-        <SubmitButton text="Register" />
-        <Link data-testid="login-link" replace to="/login" className={Styles.link}>Return to Login</Link>
+        <h2>{t('signup.header')}</h2>
+        <Input type="text" name="name" placeholder={t('signup.input1')} />
+        <Input type="email" name="email" placeholder={t('signup.input2')} />
+        <Input type="password" name="password" placeholder={t('signup.input3')} />
+        <Input type="password" name="passwordConfirmation" placeholder={t('signup.input4')} />
+        <SubmitButton text={t('signup.submit1')} />
+        <Link data-testid="login-link" replace to="/login" className={Styles.link}>{t('signup.link1')}</Link>
         <FormStatus />
       </form>
       <Footer />

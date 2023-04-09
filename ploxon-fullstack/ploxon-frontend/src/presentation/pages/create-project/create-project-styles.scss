@@ -1,6 +1,6 @@
 @import "../../styles/colors.scss";
 
-.creatProjectWrap {
+.createProjectWrap {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -42,7 +42,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .creatProjectWrap {
+  .createProjectWrap {
     .form {
       width: 280px;
       padding: 10px;

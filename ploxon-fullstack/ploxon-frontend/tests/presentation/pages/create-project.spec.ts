@@ -1,4 +1,4 @@
-import { CreatProject } from '@/presentation/pages'
+import { CreateProject } from '@/presentation/pages'
 import { EmailInUseError } from '@/domain/errors'
 import { AddProject } from '@/domain/usecases'
 import { Helper, renderWithHistory, ValidationStub } from '@/tests/presentation/mocks'
@@ -24,7 +24,7 @@ const makeSut = (params?: SutParams): SutTypes => {
   const addProjectSpy = new AddProjectSpy()
   const { setCurrentProjectMock } = renderWithHistory({
     history,
-    Page: () => CreatProject({ validation: validationStub, addProject: addProjectSpy })
+    Page: () => CreateProject({ validation: validationStub, addProject: addProjectSpy })
   })
   return {
     addProjectSpy,
@@ -42,7 +42,7 @@ const simulateValidSubmit = async (projectName = faker.name.findName(), descript
   await waitFor(() => form)
 }
 
-describe('CreatProject Component', () => {
+describe('CreateProject Component', () => {
   test('Should start with initial state', () => {
     const validationError = faker.random.words()
     makeSut({ validationError })

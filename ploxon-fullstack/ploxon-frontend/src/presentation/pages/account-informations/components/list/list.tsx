@@ -4,12 +4,14 @@ import { AccountInformationsItem, AccountInformationsItemEmpty } from '@/present
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   accountInformations: LoadAccountInformations.Model
 }
 
 const List: React.FC<Props> = ({ accountInformations }: Props) => {
+  const { t } = useTranslation()
   return (
     <ul data-testid="informations-list">
       <div className={Styles.listWrap}>
@@ -19,8 +21,8 @@ const List: React.FC<Props> = ({ accountInformations }: Props) => {
         }
       </div>
       <footer>
-        <Link data-testid="link" to="/creatproject">Creat a project</Link><br/><br/>
-        <Link data-testid="link" to="/projects">See all projects</Link>
+        <Link data-testid="link" to="/creatproject">{t('accountInformation.link1')}</Link><br/><br/>
+        <Link data-testid="link" to="/projects">{t('accountInformation.link2')}</Link>
       </footer>
     </ul>
   )

@@ -68,12 +68,12 @@ export const translations =
                             l'interface utilisateur et de la présentation des données. La deuxième couche est la couche logique, qui gère la logique de 
                             l'application et traite les requêtes utilisateur. Enfin, la troisième couche est la couche de données, qui stocke les données de l'application.`,
             div2: `La couche VPC est une couche supplémentaire qui permet de mettre en place un réseau privé virtuel dans le cloud d'AWS, ce qui 
-                            permet de sécuriser l'infrastructure et de limiter l'accès aux ressources du cloud.`,
+                            permet de sécuriser l'infrastructure et de limiter l'accès aux resources du cloud.`,
             div3: `En utilisant une architecture en 3 tier VPC, il est possible de garantir un bon niveau de disponibilité et de scalabilité pour 
                             une application déployée dans le cloud d'AWS, en séparant les différentes couches de l'infrastructure et en les gérant indépendamment les 
                             unes des autres.`,
-            div4: `Pour l'instant, la base de données disponible est externalisée. Le système est implémenté dans le projet, mais les ressources sont 
-                            hébergées dans le cloud privé de MongoDB. Nous envisageons d'implémenter un système et des ressources SQL en interne.`,
+            div4: `Pour l'instant, la base de données disponible est externalisée. Le système est implémenté dans le projet, mais les resources sont 
+                            hébergées dans le cloud privé de MongoDB. Nous envisageons d'implémenter un système et des resources SQL en interne.`,
             div5: ``,
             div6: ``
           },
@@ -99,10 +99,40 @@ export const translations =
       },
       login: {
         header: `SE CONNECTER`,
-        input1: `Saisir votre mail`,
+        input1: `Saisir votre e-mail`,
         input2: `Saisir votre mot de passe`,
         submit1: `SOUMETTRE`,
         link1: `créer un compte`
+      },
+      signup: {
+        header: `CREER UN COMPTE`,
+        input1: `Saisir votre nom`,
+        input2: `Saisir votre e-mail`,
+        input3: `Saisir un mot de passe`,
+        input4: `Confirmer votre mot de passe`,
+        submit1: `SOUMETTRE`,
+        link1: `retour à la page de connexion`
+      },
+      accountInformation: {
+        header: `INFORMATIONS DE VOTRE COMPTE`,
+        line1: ``,
+        loading: `Chargement des données...`,
+        link1: `Créer un projet`,
+        link2: `Voir tous les projets`
+      },
+      createProject: {
+        header: `CREER UN PROJET`,
+        input1: `Saisir le nom de votre projet`,
+        input2: `Decrire votre projet`,
+        input3: `Saisir les ressources de votre projet`,
+        input4: `Status du projet: brouillon, en développement, etc.`,
+        submit1: `Submit`,
+        link1: `retourrner à votre compte`
+      },
+      projects: {
+        header: `PROJETS`,
+        link1: `voir plus d'informations`,
+        link2: `Page précédente`
       }
     }
   },
@@ -204,6 +234,36 @@ export const translations =
         input2: `Type your password`,
         submit1: `SUBMIT`,
         link1: `create an account`
+      },
+      signup: {
+        header: `CREATE AN ACCOUNT`,
+        input1: `Type your name`,
+        input2: `Type your e-mail`,
+        input3: `Type your password`,
+        input4: `Retype your password`,
+        submit1: `REGISTER`,
+        link1: `return to login`
+      },
+      accountInformation: {
+        header: `USER INFORMATIONS`,
+        line1: ``,
+        loading: `Loading...`,
+        link1: `Creat a project`,
+        link2: `See all projects`
+      },
+      createProject: {
+        header: `CREATE A PROJECT`,
+        input1: `Type your project name`,
+        input2: `Describe your project`,
+        input3: `Type here your project's resources`,
+        input4: `Project status: draft, in progress, etc.`,
+        submit1: `Submit`,
+        link1: `return to your account`
+      },
+      projects: {
+        header: `PROJECTS`,
+        link1: `see more informations`,
+        link2: `Go back`
       }
     }
   }
