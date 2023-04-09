@@ -7,7 +7,6 @@ ploxon/.vscode
 ploxon/ploxon-frontend/node_modules
 ploxon/ploxon-frontend/.vscode
 ploxon/ploxon-frontend/coverage
-ploxon/ploxon-frontend/dist
 ploxon/ploxon-frontend/cypress
 
 ploxon/ploxon-backend/node_modules

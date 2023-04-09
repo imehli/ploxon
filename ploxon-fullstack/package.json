@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start:front": "node ploxon-frontend/index",
+    "start:back": "node ploxon-backend/dist/main/server.js",
+    "start:fullstack": "npm run start:front & npm run start:back"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "husky": "^8.0.2"
+  }
+}
