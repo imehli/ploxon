@@ -4,8 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
-const API_URL = 'http://localhost'
-// const API_URL = 'https://www.ploxon.com'
+// const API_URL = 'http://localhost'
+const API_URL = 'https://www.ploxon.com'
 const BACKEND_PORT = 5050
 
 module.exports = merge(common, {
