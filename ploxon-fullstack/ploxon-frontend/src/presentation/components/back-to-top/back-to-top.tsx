@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { MdKeyboardArrowUp } from 'react-icons/md'
 
 const BackToTopButton: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -28,7 +28,7 @@ const BackToTopButton: React.FC = () => {
   }
 
   return (
-    <div className={ isVisible ? Styles.backToTop : Styles.backToTopVisible } onClick={scrollToTop}>
+    <div className={ isVisible ? Styles.backToTopVisible : Styles.backToTop } onClick={scrollToTop}>
       <MdKeyboardArrowUp className={Styles.up} />
     </div>
   )

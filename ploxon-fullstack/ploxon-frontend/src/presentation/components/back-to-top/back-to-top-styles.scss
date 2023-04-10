@@ -1,27 +1,27 @@
 @import "../../styles/colors.scss";
 
 .backToTop {
-    opacity: 0;
-  }
-  
-  .backToTopVisible {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: rgba($primary, 0.8);
-    color: $white;
-    transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
-    opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba($primary, 0.8);
+  color: $white;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 1;
 
-    .up {
-      font-size: 40px;
-    }
+  .up {
+    font-size: 40px;
   }
+}
+
+.backToTopVisible {
+  opacity: 0;
+}
   
