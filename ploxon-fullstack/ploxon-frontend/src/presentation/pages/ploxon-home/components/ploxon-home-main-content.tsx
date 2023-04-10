@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom'
 const PloxonHomeMainContent: React.FC = () => {
   const { getCurrentAccount } = useRecoilValue(currentAccountState)
   const { t } = useTranslation()
-  const LINK_GITHUP = 'https://github.com/imehli/ploxon'
+  const LINK_GITHUB = 'https://github.com/imehli/ploxon'
   const LINK_PLOXON_GRAPHQL_API = 'https://www.ploxon.com:5050/graphql'
 
   return (
@@ -36,7 +36,7 @@ const PloxonHomeMainContent: React.FC = () => {
                             <div className={Styles.menuOptions}><Link data-testid="signup-link" to="/signup"><p>{t('ploxonHome.navigation.signup')}</p></Link></div>
                         </div>
                     }
-                    <div className={Styles.menuOptions}><a href={LINK_GITHUP} target="_blank" rel="noreferrer"><p>Github</p></a></div>
+                    <div className={Styles.menuOptions}><a href={LINK_GITHUB} target="_blank" rel="noreferrer"><p>Github</p></a></div>
                     <div className={Styles.menuOptions}><a href={LINK_PLOXON_GRAPHQL_API} target="_blank" rel="noreferrer"><p>{t('ploxonHome.navigation.graphql')}</p></a></div>
                 </div>
             </div>
@@ -47,9 +47,9 @@ const PloxonHomeMainContent: React.FC = () => {
             <article>
                 <h2>{t('ploxonHome.ploxonDescription.tdd.title')}</h2>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div1')}</div>
-                <div><img className={Styles.mediumImage} src={gps} alt="gps image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.mediumImage} src={gps} alt="gps image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div2')}</div>
-                <div><img className={Styles.mediumImage} src={tddPrincipal} alt="tddPrincipal image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.mediumImage} src={tddPrincipal} alt="tddPrincipal image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div3')}</div>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div4')}</div>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div5')}</div>
@@ -57,30 +57,30 @@ const PloxonHomeMainContent: React.FC = () => {
                 <div>{t('ploxonHome.ploxonDescription.tdd.div7')}</div>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div8')}</div>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div9')}</div>
-                <div><img className={Styles.mediumImage} src={tddCodeExample} alt="tddCodeExample image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.mediumImage} src={tddCodeExample} alt="tddCodeExample image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.tdd.div10')}</div>
                 <h2>{t('ploxonHome.ploxonDescription.cleanArchitecture.title')}</h2>
                 <div>{t('ploxonHome.ploxonDescription.cleanArchitecture.div1')}</div>
-                <div><img className={Styles.mediumImage} src={cleanArchitecture} alt="cleanArchitecture image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.mediumImage} src={cleanArchitecture} alt="cleanArchitecture image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.cleanArchitecture.div2')}</div>
-                <div><img className={Styles.smallImage} src={folderStructure} alt="folderStructure image"/></div>
-                <div><img className={Styles.mediumImage} src={layersDependency} alt="layersDependency image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.smallImage} src={folderStructure} alt="folderStructure image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.mediumImage} src={layersDependency} alt="layersDependency image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.cleanArchitecture.div3')}</div>
-                <div><img className={Styles.mediumImage} src={cleanJoin} alt="cleanJoin image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.mediumImage} src={cleanJoin} alt="cleanJoin image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.cleanArchitecture.div4')}</div>
-                <div><img className={Styles.mediumImage} src={interfaceAdapter} alt="interfaceAdapter image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.mediumImage} src={interfaceAdapter} alt="interfaceAdapter image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.cleanArchitecture.div5')}</div>
                 <h2>{t('ploxonHome.ploxonDescription.infrastructure.title')}</h2>
                 <div>{t('ploxonHome.ploxonDescription.infrastructure.div1')}</div>
                 <div>{t('ploxonHome.ploxonDescription.infrastructure.div2')}</div>
                 <div>{t('ploxonHome.ploxonDescription.infrastructure.div3')}</div>
-                <div><img className={Styles.largeImage} src={infrastructureArchitecture} alt="infrastructureArchitecture image"/></div>
+                <div className={Styles.imagesWrap}><img className={Styles.largeImage} src={infrastructureArchitecture} alt="infrastructureArchitecture image"/></div>
                 <div>{t('ploxonHome.ploxonDescription.infrastructure.div4')}</div>
             </article>
             <h1>{t('ploxonHome.ploxonDescription.dao.title')}</h1>
             <article>
                 <div>{t('ploxonHome.ploxonDescription.dao.div1')}</div>
-                <div><Trans i18nKey="ploxonHome.ploxonDescription.dao.div2" components={{ LINK_GITHUP: <LinkText to={LINK_GITHUP} title="Github" /> }}/></div>
+                <div><Trans i18nKey="ploxonHome.ploxonDescription.dao.div2" components={{ LINK_GITHUB: <LinkText to={LINK_GITHUB} title="Github" /> }}/></div>
             </article>
             <h1>{t('ploxonHome.ploxonDescription.desclaimer.title')}</h1>
             <article>

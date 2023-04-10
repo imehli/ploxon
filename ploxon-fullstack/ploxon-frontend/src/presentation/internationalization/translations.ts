@@ -82,7 +82,7 @@ export const translations =
             div1: `Ploxon est conçu pour être gouvernée par un modèle d'organisation décentralisée et autonome (DAO). 
                           Actuellement, le système DAO n'est pas encore implémenté et Ploxon est en phase de test bêta avec des améliorations en cours.`,
             div2: `Les développeurs sont invités à contribuer au projet et à façonner son avenir. 
-                          Vous pouvez trouver le code source de Ploxon et suivre son développement sur notre <LINK_GITHUP>dépôt Github</LINK_GITHUP>. 
+                          Vous pouvez trouver le code source de Ploxon et suivre son développement sur notre <LINK_GITHUB>dépôt Github</LINK_GITHUB>. 
                           Rejoignez la communauté Ploxon et soyez un acteur du futur des systèmes décentralisés.`
           },
           desclaimer: {
@@ -214,7 +214,7 @@ export const translations =
             title: `DAO`,
             div1: `Ploxon is designed to be governed by a DAO model. Currently, the DAO system is not yet implemented, and Ploxon is in a beta testing phase with ongoing improvements. 
                           Developers are invited to contribute to the project and help shape its future.`,
-            div2: `You can find Ploxon's source code and follow its development on our <LINK_GITHUP>Github repository</LINK_GITHUP>. 
+            div2: `You can find Ploxon's source code and follow its development on our <LINK_GITHUB>Github repository</LINK_GITHUB>. 
                           Join the Ploxon community and be a part of shaping the future of decentralized systems.`
           },
           desclaimer: {

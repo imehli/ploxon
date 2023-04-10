@@ -6,7 +6,6 @@ const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
 const API_URL = 'http://localhost'
 // const API_URL = 'https://www.ploxon.com'
-// const FRONTEND_PORT = 80
 const BACKEND_PORT = 5050
 
 module.exports = merge(common, {

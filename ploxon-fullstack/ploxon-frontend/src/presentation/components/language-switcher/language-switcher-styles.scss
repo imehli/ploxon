@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba($primaryLight, 0.9);
+  background-color: rgba($primaryLight, 0.7);
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -28,7 +28,7 @@
 .closeButton{
   display: flex;
   justify-content: end;
-  background-color: $primaryLight;
+  background-color: rgba($primaryLight, 0);
 }
 
 .buttonsWrap{

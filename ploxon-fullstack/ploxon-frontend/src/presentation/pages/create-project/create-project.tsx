@@ -7,6 +7,7 @@ import { AddProject } from '@/domain/usecases'
 import { useHistory, Link } from 'react-router-dom'
 import { useRecoilState, useResetRecoilState } from 'recoil'
 import React, { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   validation: Validation
@@ -17,6 +18,7 @@ const CreateProject: React.FC<Props> = ({ validation, addProject }: Props) => {
   const resetCreateProjectState = useResetRecoilState(createProjectState)
   const history = useHistory()
   const [state, setState] = useRecoilState(createProjectState)
+  const { t } = useTranslation()
 
   useEffect(() => resetCreateProjectState(), [])
   useEffect(() => validate('projectName'), [state.projectName])
@@ -58,13 +60,13 @@ const CreateProject: React.FC<Props> = ({ validation, addProject }: Props) => {
     <div className={Styles.createProjectWrap}>
       <LoginHeader />
       <form data-testid="form" className={Styles.form} onSubmit={handleSubmit}>
-        <h2>Creat a project</h2>
-        <Input type="text" name="projectName" placeholder="Type your projectName" />
-        <Input type="text" name="description" placeholder="Describe your project" />
-        <Input type="text" name="resources" placeholder="Type here your project's resources" />
-        <Input type="text" name="projectPrivateStatus" placeholder="choose a status : draft, in prgress ..." />
-        <SubmitButton text="Creat Project" />
-        <Link data-testid="login-link" replace to="/account" className={Styles.link}>Return to your account</Link>
+        <h2>{t('createProject.header')}</h2>
+        <Input type="text" name="projectName" placeholder={t('createProject.input1')} />
+        <Input type="text" name="description" placeholder={t('createProject.input2')}/>
+        <Input type="text" name="resources" placeholder={t('createProject.input3')} />
+        <Input type="text" name="projectPrivateStatus" placeholder={t('createProject.input4')} />
+        <SubmitButton text={t('createProject.submit1')} />
+        <Link data-testid="account-link" replace to="/account" className={Styles.link}>{t('createProject.link1')}</Link>
         <FormStatus />
       </form>
       <Footer />
