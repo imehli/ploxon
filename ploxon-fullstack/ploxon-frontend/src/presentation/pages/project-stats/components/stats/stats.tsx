@@ -40,7 +40,7 @@ const ProjectStatsData: React.FC<Props> = ({ projectStats }: Props) => {
           </div>
         </div>
       </hgroup>
-      <button className={Styles.button} data-testid="back-button" onClick={goBack}>{t('signup.link2')}</button>
+      <button className={Styles.button} data-testid="back-button" onClick={goBack}>{t('projects.link2')}</button>
     </div>
   )
 }

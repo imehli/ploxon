@@ -27,7 +27,7 @@ const ProjectItem: React.FC<Props> = ({ project }: Props) => {
           <p data-testid="projectPrivateStatus">{project.projectPrivateStatus}</p>
         </div>
       </div>
-      <footer><Link data-testid="link" to={`/projects/${project.projectId}`}>{t('signup.link1')}</Link></footer>
+      <footer><Link data-testid="link" to={`/projects/${project.projectId}`}>{t('projects.link1')}</Link></footer>
     </li>
   )
 }

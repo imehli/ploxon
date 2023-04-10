@@ -126,8 +126,8 @@ export const translations =
         input2: `Decrire votre projet`,
         input3: `Saisir les ressources de votre projet`,
         input4: `Status du projet: brouillon, en développement, etc.`,
-        submit1: `Submit`,
-        link1: `retourrner à votre compte`
+        submit1: `SOUMETTRE`,
+        link1: `aller à votre compte`
       },
       projects: {
         header: `PROJETS`,
@@ -248,7 +248,7 @@ export const translations =
         header: `USER INFORMATIONS`,
         line1: ``,
         loading: `Loading...`,
-        link1: `Creat a project`,
+        link1: `Create a project`,
         link2: `See all projects`
       },
       createProject: {
@@ -257,8 +257,8 @@ export const translations =
         input2: `Describe your project`,
         input3: `Type here your project's resources`,
         input4: `Project status: draft, in progress, etc.`,
-        submit1: `Submit`,
-        link1: `return to your account`
+        submit1: `SUBMIT`,
+        link1: `Go to your account`
       },
       projects: {
         header: `PROJECTS`,
