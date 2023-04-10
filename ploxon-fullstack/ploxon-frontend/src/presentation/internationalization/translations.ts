@@ -55,8 +55,8 @@ export const translations =
                           des jonctions comme sur l'image ci-dessus pour lier les câbles électriques, cela pourrait fonctionner au début, 
                           mais au fur et à mesure que le système gagne en complexité, ce type de jonction devient un enfer. Au lieu de cette façon de 
                           faire, il est préférable de contrôler les liens entre les systèmes en créant des ports (prises de courant), des 
-                          adaptateurs (prises mâles), et le jour où l'on veut effectuer des changements, il suffit simplement de débrancher la prise et 
-                          de la remplacer ou de la supprimer !`,
+                          adaptateurs (prises mâles), et le jour où l'on veut effectuer des changements, il suffit simplement de débrancher l'adaptateur et 
+                          de le remplacer ou de le supprimer !`,
             div5: `À l'instar des prises de courant électriques, dans le monde du code, un socle de prise est assimilable à un port (interface), 
                             la prise mâle à un adaptateur et le système électrique qui traite le courant branché au use case. Ainsi, un très bon niveau de 
                             séparation des préoccupations est garanti grâce à ce processus.`
@@ -88,10 +88,10 @@ export const translations =
           desclaimer: {
             title: `NB`,
             div1: `Ploxon est un produit en bêta et est toujours en cours de développement. Bien que nous nous efforcions de fournir une plateforme fiable et fonctionnelle, 
-                          il peut y avoir des bugs et d'autres problèmes qui affectent les performances. 
-                          En utilisant Ploxon, vous comprenez et reconnaissez que vous utilisez le service à vos propres risques. 
-                          Ploxon et ses créateurs ne sont pas responsables de toutes les pertes ou dommages qui peuvent survenir en résultat de l'utilisation de la plateforme. 
-                          Nous accueillons les contributions et les commentaires de la communauté pour nous aider à continuer à améliorer Ploxon.`,
+                        il peut y avoir des bugs et d'autres problèmes qui affectent les performances. 
+                        En utilisant Ploxon, vous comprenez et reconnaissez que vous utilisez le service à vos propres risques. 
+                        Ploxon et ses créateurs ne sont pas responsables de toutes les pertes ou dommages qui peuvent survenir en résultat de l'utilisation de la plateforme. 
+                        Nous accueillons les contributions et les commentaires de la communauté pour nous aider à continuer à améliorer Ploxon.`,
             div2: `Ce disclaimer met en évidence la nature bêta du produit, tout en indiquant clairement qu'il n'est pas encore entièrement testé ou infaillible. 
                           Il établit l'attente que l'utilisateur utilise Ploxon à ses propres risques, et protège les développeurs de toutes les répercussions légales potentielles.`
           }
@@ -125,7 +125,7 @@ export const translations =
         input1: `Saisir le nom de votre projet`,
         input2: `Decrire votre projet`,
         input3: `Saisir les ressources de votre projet`,
-        input4: `Status du projet: brouillon, en développement, etc.`,
+        input4: `Status du projet: brouillon, etc.`,
         submit1: `SOUMETTRE`,
         link1: `aller à votre compte`
       },
