@@ -1,5 +1,5 @@
 import Styles from './ploxon-home-styles.scss'
-import { Footer, PloxonHomeHeader } from '@/presentation/components'
+import { Footer, PloxonHomeHeader, BackToTopButton } from '@/presentation/components'
 
 import React from 'react'
 import { PloxonHomeMainContent } from './components'
@@ -10,6 +10,7 @@ const PloxonHome: React.FC = () => {
       <>
         <PloxonHomeHeader />
         <PloxonHomeMainContent />
+        <BackToTopButton />
         <Footer />
       </>
     </div>

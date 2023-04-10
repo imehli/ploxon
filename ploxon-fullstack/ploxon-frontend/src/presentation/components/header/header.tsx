@@ -5,10 +5,12 @@ import { useLogout } from '@/presentation/hooks'
 import { useRecoilValue } from 'recoil'
 import React, { memo } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Header: React.FC = () => {
   const logout = useLogout()
   const { getCurrentAccount } = useRecoilValue(currentAccountState)
+  const { t } = useTranslation()
   const buttonClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void => {
     event.preventDefault()
     logout()
@@ -23,7 +25,7 @@ const Header: React.FC = () => {
           <Link data-testid="account-link" to="/account">
             <span data-testid="username">{getCurrentAccount().name}</span><br/><br/>
           </Link>
-          <a data-testid="logout" href="#" onClick={buttonClick}>QUIT</a>
+          <a data-testid="logout" href="#" onClick={buttonClick}>{t('header.quit')}</a>
         </div>
       </div>
     </header>

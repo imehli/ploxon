@@ -133,6 +133,10 @@ export const translations =
         header: `PROJETS`,
         link1: `voir plus d'informations`,
         link2: `Page précédente`
+      },
+      header: {
+        account: `MON COMPTE`,
+        quit: `SE DECONNECTER`
       }
     }
   },
@@ -264,6 +268,10 @@ export const translations =
         header: `PROJECTS`,
         link1: `see more informations`,
         link2: `Go back`
+      },
+      header: {
+        account: `MY ACCOUNT`,
+        quit: `SIGN OUT`
       }
     }
   }
