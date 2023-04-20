@@ -12,7 +12,7 @@ export const translations =
         ploxonDescription: {
           presentation: {
             title: `BIENVENUE DANS PLOXON`,
-            div1: `Ploxon est une plateforme d'eléction et de gestion de projets autogérée grace à un model DAO (Organisation Autonome Décentralisée), 
+            div1: `Ploxon est une plateforme d'eléction et de gestion de projets destinée à être autogérée grace à un model DAO (Organisation Autonome Décentralisée), 
                           elle est conçue avec des principes de la Clean architecture garantissant une conception modulaire scalable et maintenable. 
                           La plateforme est deployée dans le cloud sous le model 3 tier VPC architecture dans AWS fournissant une infrastructure securisée et robuste, 
                           étant donné l'importance de ces concepts pour le développement de ce projet, nous allons les expliquer ci-après.`
@@ -151,7 +151,7 @@ export const translations =
         ploxonDescription: {
           presentation: {
             title: `WELCOME TO PLOXON`,
-            div1: `Ploxon is a platform for self-managed elections and project management that operates using a decentralized autonomous organization (DAO) model, 
+            div1: `Ploxon is a platform for self-managed elections and project management destined to operate using a decentralized autonomous organization (DAO) model, 
                           it is designed with clean architecture principles ensuring modular scalable and maintainable design. 
                           The platform is deployed in the cloud using AWS 3 tier VPC architecture providing a secure and robust infrastructure, 
                           given the importance of these concepts for the development of this project, we will explain them below.`
