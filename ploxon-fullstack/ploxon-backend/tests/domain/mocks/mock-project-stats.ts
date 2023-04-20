@@ -12,6 +12,7 @@ export const mockSaveProjectStatsParams = (): SaveProjectStats.Params => ({
 })
 
 export const mockProjectStatsQueryModel = (): ProjectStatsQueryModel => ({
+  projectName: faker.random.words(),
   accountId: faker.datatype.uuid(),
   projectId: faker.datatype.uuid(),
   description: faker.random.words(),
@@ -26,6 +27,7 @@ export const mockProjectStatsQueryModel = (): ProjectStatsQueryModel => ({
 })
 
 export const mockEmptyProjectStatsQueryModel = (): ProjectStatsQueryModel => ({
+  projectName: faker.random.words(),
   accountId: faker.datatype.uuid(),
   projectId: faker.datatype.uuid(),
   description: faker.random.words(),
