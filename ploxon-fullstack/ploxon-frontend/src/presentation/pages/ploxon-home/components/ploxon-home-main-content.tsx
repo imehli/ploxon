@@ -41,6 +41,11 @@ const PloxonHomeMainContent: React.FC = () => {
                 </div>
             </div>
         </section>
+        <section data-testid="ploxon-home1" className={Styles.youtubeSection}>
+            <div data-testid="ploxon-home1" className={Styles.youtubeSectionContent}>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GCMSSrhus9k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            </div>
+        </section>
         <section id="secondSection" data-testid="ploxon-home2" className={Styles.secondSection}>
             <h1>{t('ploxonHome.ploxonDescription.presentation.title')}</h1>
             <div>{t('ploxonHome.ploxonDescription.presentation.div1')}</div>

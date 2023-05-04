@@ -72,6 +72,19 @@
   }
 }
 
+.youtubeSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 10px;
+  margin-bottom: 40px;
+
+  .youtubeSectionContent {
+    width: 45%;
+    height: 700px;
+  }
+}
+
 .secondSection {
   display: flex;
   flex-direction: column;
@@ -169,6 +182,15 @@
 @media only screen and (max-width: 600px) {
   .ploxonHomeWrap {
     border-top-width: 20px;
+  }
+
+  .youtubeSection {
+    .youtubeSectionContent {
+      width: 100%;
+      height: 350px;
+      padding: 20px;
+    }
+
   }
 
   .secondSection {
